@@ -1,0 +1,32 @@
+<h3>Users</h3>
+<div>
+	<a routerLink="/add">
+	<button mat-raised-button	>Add New User</button>
+	</a>
+</div>
+<table >
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Surname</th>
+    <th>telNo</th>
+	<th>Address</th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td>{{user.id}}</td>
+    <td>{{user.name}}</td>
+    <td>{{user.surname}}</td>
+    <td>{{user.telNo}}</td>
+    <td>{{user.address}}</td>
+    
+	<td>
+		<a routerLink="/detail/{{user.id}}"><button mat-button color="primary">Detail</button></a>
+		&nbsp;
+		<a routerLink="/edit/{{user.id}}"><button mat-button color="accent">Edit</button></a>
+		&nbsp;
+    <button mat-button color="warn" title="delete user" (click)="delete(user)">x</button>
+    <mat-divider></mat-divider>
+  </td>
+  <mat-divider></mat-divider>
+  </tr>
+</table>

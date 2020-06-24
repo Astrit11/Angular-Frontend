@@ -1,0 +1,36 @@
+<div>
+    <h2>Add User Detail</h2>
+    <div>
+      <p>
+        <mat-form-field appearance="outline">
+            <mat-label>Name:</mat-label>
+            <input matInput [(ngModel)]="user.name" placeholder="User Name"/>
+          </mat-form-field>
+         
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+            <mat-label>Surname:</mat-label>
+               <input matInput [(ngModel)]="user.surname" placeholder="Surname"/>
+          </mat-form-field>
+         
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+            <mat-label>telNo:</mat-label>
+               <input matInput  [(ngModel)]="user.telNo" placeholder="telNo"/>
+          </mat-form-field>
+          
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+            <mat-label>Address:</mat-label>
+               <input matInput  [(ngModel)]="user.address" placeholder="Address"/>
+          </mat-form-field>
+       
+    </p>
+    </div>
+    <button mat-raised-button (click)="goBack()">go back</button>
+    &nbsp;
+    <button mat-raised-button color="primary" (click)="save()">save</button>
+  </div>
