@@ -27,21 +27,23 @@ import { UserDetailComponent } from './user-detail/user-detail.component';
     UserEditComponent,
     UserDetailComponent
   ],
-  imports: [
-    BrowserModule,
+  imports: 
+  [
+  BrowserModule,
 	FormsModule,
 	AppRoutingModule,
   HttpClientModule,
   MatListModule,
   MatGridListModule,
-MatDividerModule,
-MatFormFieldModule,
-MatInputModule,
-MatButtonModule,
-MatTableModule,
-
+  MatDividerModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatButtonModule,
+  MatTableModule,
   ],
+
   providers: [],
   bootstrap: [AppComponent]
+  
 })
 export class AppModule { }
